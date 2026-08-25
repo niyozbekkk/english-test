@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+[25.08.2026 20:30] Niyozbek: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>English Grammar Test - 30 Questions</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f2f4f7;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    .info {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    input {
+        padding: 10px;
+        width: 80%;
+        max-width: 400px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+    }
+
+    .question {
+        margin-top: 25px;
+        padding: 15px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+
+    .question p {
+        font-weight: bold;
+    }
+
+    label {
+        display: block;
+        padding: 7px;
+        cursor: pointer;
+    }
+
+    button {
+        display: block;
+        margin: 30px auto 10px;
+        padding: 12px 30px;
+        font-size: 17px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #0056b3;
+    }
+
+    #result {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    .correct {
+        color: green;
+    }
+
+    .wrong {
+        color: red;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>English Grammar Test</h1>
+
+<div class="info">
+    <p>Enter your name:</p>
+    <input type="text" id="name" placeholder="Your name">
+    <p>30 Questions | Choose the correct answer</p>
+</div>
+
+<form id="quizForm">
+
+<div class="question">
+<p>1. She ___ to school every day.</p>
+<label><input type="radio" name="q1" value="a"> go</label>
+<label><input type="radio" name="q1" value="b"> goes</label>
+<label><input type="radio" name="q1" value="c"> going</label>
+</div>
+
+<div class="question">
+<p>2. They ___ football now.</p>
+<label><input type="radio" name="q2" value="a"> play</label>
+<label><input type="radio" name="q2" value="b"> played</label>
+<label><input type="radio" name="q2" value="c"> are playing</label>
+</div>
+
+<div class="question">
+<p>3. I ___ my homework yesterday.</p>
+<label><input type="radio" name="q3" value="a"> do</label>
+<label><input type="radio" name="q3" value="b"> did</label>
+<label><input type="radio" name="q3" value="c"> done</label>
+</div>
+
+<div class="question">
+<p>4. He ___ English very well.</p>
+<label><input type="radio" name="q4" value="a"> speaks</label>
+<label><input type="radio" name="q4" value="b"> speak</label>
+<label><input type="radio" name="q4" value="c"> speaking</label>
+</div>
+
+<div class="question">
+<p>5. We ___ to the park tomorrow.</p>
+<label><input type="radio" name="q5" value="a"> went</label>
+<label><input type="radio" name="q5" value="b"> will go</label>
+<label><input type="radio" name="q5" value="c"> goes</label>
+</div>
+
+<div class="question">
+<p>6. ___ you like coffee?</p>
+<label><input type="radio" name="q6" value="a"> Do</label>
+<label><input type="radio" name="q6" value="b"> Does</label>
+<label><input type="radio" name="q6" value="c"> Did</label>
+</div>
+
+<div class="question">
+<p>7. My brother ___ a new car.</p>
+<label><input type="radio" name="q7" value="a"> have</label>
+<label><input type="radio" name="q7" value="b"> has</label>
+<label><input type="radio" name="q7" value="c"> having</label>
+</div>
+
+<div class="question">
+<p>8. There ___ a book on the table.</p>
+<label><input type="radio" name="q8" value="a"> are</label>
+<label><input type="radio" name="q8" value="b"> is</label>
+<label><input type="radio" name="q8" value="c"> am</label>
+</div>
+[25.08.2026 20:30] Niyozbek: <div class="question">
+<p>9. They ___ dinner at 7 PM yesterday.</p>
+<label><input type="radio" name="q9" value="a"> had</label>
+<label><input type="radio" name="q9" value="b"> have</label>
+<label><input type="radio" name="q9" value="c"> has</label>
+</div>
+
+<div class="question">
+<p>10. I ___ never been to London.</p>
+<label><input type="radio" name="q10" value="a"> have</label>
+<label><input type="radio" name="q10" value="b"> has</label>
+<label><input type="radio" name="q10" value="c"> had</label>
+</div>
+
+<div class="question">
+<p>11. She is ___ than her sister.</p>
+<label><input type="radio" name="q11" value="a"> tall</label>
+<label><input type="radio" name="q11" value="b"> taller</label>
+<label><input type="radio" name="q11" value="c"> tallest</label>
+</div>
+
+<div class="question">
+<p>12. This is the ___ book I have ever read.</p>
+<label><input type="radio" name="q12" value="a"> interesting</label>
+<label><input type="radio" name="q12" value="b"> more interesting</label>
+<label><input type="radio" name="q12" value="c"> most interesting</label>
+</div>
+
+<div class="question">
+<p>13. He ___ get up early every day.</p>
+<label><input type="radio" name="q13" value="a"> have to</label>
+<label><input type="radio" name="q13" value="b"> has to</label>
+<label><input type="radio" name="q13" value="c"> having to</label>
+</div>
+
+<div class="question">
+<p>14. I am interested ___ music.</p>
+<label><input type="radio" name="q14" value="a"> in</label>
+<label><input type="radio" name="q14" value="b"> on</label>
+<label><input type="radio" name="q14" value="c"> at</label>
+</div>
+
+<div class="question">
+<p>15. She ___ TV every evening.</p>
+<label><input type="radio" name="q15" value="a"> watch</label>
+<label><input type="radio" name="q15" value="b"> watches</label>
+<label><input type="radio" name="q15" value="c"> watched</label>
+</div>
+
+<div class="question">
+<p>16. We ___ dinner when he arrived.</p>
+<label><input type="radio" name="q16" value="a"> were having</label>
+<label><input type="radio" name="q16" value="b"> have</label>
+<label><input type="radio" name="q16" value="c"> had</label>
+</div>
+
+<div class="question">
+<p>17. They ___ already finished the work.</p>
+<label><input type="radio" name="q17" value="a"> have</label>
+<label><input type="radio" name="q17" value="b"> has</label>
+<label><input type="radio" name="q17" value="c"> are</label>
+</div>
+
+<div class="question">
+<p>18. I ___ a student.</p>
+<label><input type="radio" name="q18" value="a"> is</label>
+<label><input type="radio" name="q18" value="b"> am</label>
+<label><input type="radio" name="q18" value="c"> are</label>
+</div>
+
+<div class="question">
+<p>19. ___ there any milk in the fridge?</p>
+<label><input type="radio" name="q19" value="a"> Are</label>
+<label><input type="radio" name="q19" value="b"> Is</label>
+<label><input type="radio" name="q19" value="c"> Am</label>
+</div>
+
+<div class="question">
+<p>20. He ___ his friend last weekend.</p>
+<label><input type="radio" name="q20" value="a"> visit</label>
+<label><input type="radio" name="q20" value="b"> visits</label>
+<label><input type="radio" name="q20" value="c"> visited</label>
+</div>
+
+<div class="question">
+<p>21. I usually ___ breakfast at 8 AM.</p>
+<label><input type="radio" name="q21" value="a"> have</label>
+<label><input type="radio" name="q21" value="b"> has</label>
+<label><input type="radio" name="q21" value="c"> had</label>
+</div>
+
+<div class="question">
+<p>22. She can ___ very fast.</p>
+<label><input type="radio" name="q22" value="a"> runs</label>
+<label><input type="radio" name="q22" value="b"> run</label>
+<label><input type="radio" name="q22" value="c"> running</label>
+</div>
+
+<div class="question">
+<p>23. We ___ going to travel next month.</p>
+<label><input type="radio" name="q23" value="a"> is</label>
+<label><input type="radio" name="q23" value="b"> are</label>
+<label><input type="radio" name="q23" value="c"> am</label>
+</div>
+[25.08.2026 20:30] Niyozbek: <div class="question">
+<p>24. My parents ___ at home now.</p>
+<label><input type="radio" name="q24" value="a"> is</label>
+<label><input type="radio" name="q24" value="b"> are</label>
+<label><input type="radio" name="q24" value="c"> am</label>
+</div>
+
+<div class="question">
+<p>25. This bag is ___ than that one.</p>
+<label><input type="radio" name="q25" value="a"> expensive</label>
+<label><input type="radio" name="q25" value="b"> more expensive</label>
+<label><input type="radio" name="q25" value="c"> most expensive</label>
+</div>
+
+<div class="question">
+<p>26. He ___ English for five years.</p>
+<label><input type="radio" name="q26" value="a"> studies</label>
+<label><input type="radio" name="q26" value="b"> has studied</label>
+<label><input type="radio" name="q26" value="c"> study</label>
+</div>
+
+<div class="question">
+<p>27. If it rains, we ___ at home.</p>
+<label><input type="radio" name="q27" value="a"> stay</label>
+<label><input type="radio" name="q27" value="b"> stayed</label>
+<label><input type="radio" name="q27" value="c"> will stay</label>
+</div>
+
+<div class="question">
+<p>28. I ___ him tomorrow.</p>
+<label><input type="radio" name="q28" value="a"> call</label>
+<label><input type="radio" name="q28" value="b"> called</label>
+<label><input type="radio" name="q28" value="c"> will call</label>
+</div>
+
+<div class="question">
+<p>29. They ___ to the cinema last night.</p>
+<label><input type="radio" name="q29" value="a"> go</label>
+<label><input type="radio" name="q29" value="b"> went</label>
+<label><input type="radio" name="q29" value="c"> gone</label>
+</div>
+
+<div class="question">
+<p>30. You ___ wear a seatbelt in a car.</p>
+<label><input type="radio" name="q30" value="a"> should</label>
+<label><input type="radio" name="q30" value="b"> should to</label>
+<label><input type="radio" name="q30" value="c"> shoulds</label>
+</div>
+
+<button type="button" onclick="checkAnswers()">Finish Test</button>
+
+</form>
+
+<div id="result"></div>
+
+</div>
+
+<script>
+function checkAnswers() {
+
+    let correctAnswers = [
+        "b", "c", "b", "a", "b",
+        "a", "b", "b", "a", "a",
+        "b", "c", "b", "a", "b",
+        "a", "a", "b", "b", "c",
+        "a", "b", "b", "b", "b",
+        "b", "c", "c", "b", "a"
+    ];
+
+    let score = 0;
+    let unanswered = 0;
+
+    for (let i = 1; i <= 30; i++) {
+        let answer = document.querySelector('input[name="q' + i + '"]:checked');
+
+        if (!answer) {
+            unanswered++;
+        } else if (answer.value === correctAnswers[i - 1]) {
+            score++;
+        }
+    }
+
+    let name = document.getElementById("name").value;
+
+    if (name === "") {
+        name = "Student";
+    }
+
+    let percentage = (score / 30) * 100;
+
+    document.getElementById("result").innerHTML =
+        name + ", your result: " + score + "/30<br>" +
+        "Percentage: " + percentage.toFixed(1) + "%<br>" +
+        "Unanswered: " + unanswered;
+}
+</script>
+
+</body>
+</html>
