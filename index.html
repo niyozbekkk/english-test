@@ -1,4 +1,4 @@
-[25.08.2026 21:59] Niyozbek: <!DOCTYPE html>
+[25.08.2026 22:13] Niyozbek: <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -30,11 +30,20 @@ h1 {
 
 .start-screen {
     text-align: center;
-    padding: 30px 10px;
+    padding: 20px 10px;
 }
 
-.start-screen p {
-    font-size: 18px;
+.name-box {
+    margin: 20px auto;
+}
+
+.name-box input {
+    width: 90%;
+    max-width: 450px;
+    padding: 13px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
 .timer {
@@ -98,6 +107,13 @@ button:hover {
 <h1>English Grammar Test</h1>
 
 <div id="startScreen" class="start-screen">
+
+    <div class="name-box">
+        <p><b>Full Name</b></p>
+        <input type="text" id="studentName"
+               placeholder="Enter your first and last name">
+    </div>
+
     <h2>30 Questions</h2>
     <p>Time limit: 30 minutes</p>
     <p>Press START TEST to begin.</p>
@@ -147,12 +163,13 @@ button:hover {
 
 <div class="question">
 <p>5. I _ you at 8.00, but you _ just _ out.</p>
-<label><input type="radio" name="q5" value="A"> A) call / have / gone</label>
+[25.08.2026 22:13] Niyozbek: <label><input type="radio" name="q5" value="A"> A) call / have / gone</label>
 <label><input type="radio" name="q5" value="B"> B) called / have / gone</label>
 <label><input type="radio" name="q5" value="C"> C) called / had / gone</label>
 <label><input type="radio" name="q5" value="D"> D) have called / have / gone</label>
 </div>
-[25.08.2026 21:59] Niyozbek: <div class="question">
+
+<div class="question">
 <p>6. I took my family to Paris last year. I _ there as a student, so I _ my way around.</p>
 <label><input type="radio" name="q6" value="A"> A) was / know</label>
 <label><input type="radio" name="q6" value="B"> B) were / knew</label>
@@ -231,15 +248,15 @@ button:hover {
 <label><input type="radio" name="q15" value="C"> C) managed</label>
 <label><input type="radio" name="q15" value="D"> D) couldn’t</label>
 </div>
-
-<div class="question">
+[25.08.2026 22:13] Niyozbek: <div class="question">
 <p>16. In my country you _ get married when you’re sixteen.</p>
 <label><input type="radio" name="q16" value="A"> A) can</label>
 <label><input type="radio" name="q16" value="B"> B) could</label>
 <label><input type="radio" name="q16" value="C"> C) managed to</label>
 <label><input type="radio" name="q16" value="D"> D) couldn’t</label>
 </div>
-[25.08.2026 21:59] Niyozbek: <div class="question">
+
+<div class="question">
 <p>17. Speak up! I _ hear you!</p>
 <label><input type="radio" name="q17" value="A"> A) can</label>
 <label><input type="radio" name="q17" value="B"> B) could</label>
@@ -318,15 +335,15 @@ button:hover {
 <label><input type="radio" name="q26" value="C"> C) was assuming</label>
 <label><input type="radio" name="q26" value="D"> D) was assumed</label>
 </div>
-
-<div class="question">
+[25.08.2026 22:13] Niyozbek: <div class="question">
 <p>27. The man who __ by a snake was given a serum.</p>
 <label><input type="radio" name="q27" value="A"> A) is bitten</label>
 <label><input type="radio" name="q27" value="B"> B) has been bitten</label>
 <label><input type="radio" name="q27" value="C"> C) had been bitten</label>
 <label><input type="radio" name="q27" value="D"> D) had bitten</label>
 </div>
-[25.08.2026 21:59] Niyozbek: <div class="question">
+
+<div class="question">
 <p>28. A cease-fire __ expected to __ later this month.</p>
 <label><input type="radio" name="q28" value="A"> A) was / be declaring</label>
 <label><input type="radio" name="q28" value="B"> B) is / be declared</label>
@@ -374,8 +391,16 @@ const answers = [
 let timeLeft = 30 * 60;
 let timer = null;
 let finished = false;
+let studentName = "";
 
 function startTest() {
+
+    studentName = document.getElementById("studentName").value.trim();
+
+    if (studentName === "") {
+        alert("Please enter your full name.");
+        return;
+    }
 
     document.getElementById("startScreen").style.display = "none";
     document.getElementById("testArea").style.display = "block";
@@ -440,6 +465,7 @@ function finishTest() {
 
     document.getElementById("result").innerHTML =
         "<h2>Test Result</h2>" +
+        "<p>Name: " + studentName + "</p>" +
         "<p>Score: " + score + " / 30</p>" +
         "<p>Percentage: " + percent.toFixed(1) + "%</p>" +
         "<p>" + message + "</p>";
