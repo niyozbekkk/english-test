@@ -1,73 +1,92 @@
-[25.08.2026 21:30] Niyozbek: <!DOCTYPE html>
+[25.08.2026 21:59] Niyozbek: <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>English Grammar Test</title>
 
 <style>
-body{
-    font-family:Arial,sans-serif;
-    background:#f2f4f7;
-    margin:0;
-    padding:20px;
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    margin: 0;
+    padding: 20px;
 }
-.container{
-    max-width:850px;
-    margin:auto;
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 4px 15px rgba(0,0,0,.12);
+
+.container {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
 }
-h1{text-align:center;color:#222}
-.info{text-align:center;margin-bottom:25px}
-#name{
-    padding:12px;
-    width:90%;
-    max-width:400px;
-    border:1px solid #ccc;
-    border-radius:7px;
-    font-size:16px;
+
+h1 {
+    text-align: center;
+    color: #222;
 }
-.timer{
-    text-align:center;
-    font-size:22px;
-    font-weight:bold;
-    margin:15px;
+
+.start-screen {
+    text-align: center;
+    padding: 30px 10px;
 }
-.question{
-    background:#f8f9fa;
-    padding:15px;
-    margin:15px 0;
-    border-radius:10px;
+
+.start-screen p {
+    font-size: 18px;
 }
-.question p{
-    font-weight:bold;
-    line-height:1.5;
+
+.timer {
+    position: sticky;
+    top: 0;
+    background: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px;
+    z-index: 10;
 }
-label{
-    display:block;
-    padding:8px;
-    cursor:pointer;
+
+.question {
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
 }
-button{
-    display:block;
-    margin:25px auto;
-    padding:13px 35px;
-    background:#007bff;
-    color:white;
-    border:0;
-    border-radius:8px;
-    font-size:17px;
-    cursor:pointer;
+
+.question p {
+    font-weight: bold;
+    line-height: 1.5;
 }
-button:hover{background:#0056b3}
-#result{
-    text-align:center;
-    font-size:21px;
-    font-weight:bold;
-    margin-top:20px;
+
+label {
+    display: block;
+    padding: 8px;
+    cursor: pointer;
+}
+
+button {
+    display: block;
+    margin: 25px auto;
+    padding: 13px 35px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#result {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 25px;
 }
 </style>
 </head>
@@ -78,9 +97,15 @@ button:hover{background:#0056b3}
 
 <h1>English Grammar Test</h1>
 
-<div class="info">
-    <input type="text" id="name" placeholder="Enter your name">
+<div id="startScreen" class="start-screen">
+    <h2>30 Questions</h2>
+    <p>Time limit: 30 minutes</p>
+    <p>Press START TEST to begin.</p>
+
+    <button type="button" onclick="startTest()">START TEST</button>
 </div>
+
+<div id="testArea" style="display:none;">
 
 <div class="timer">
     Time: <span id="time">30:00</span>
@@ -127,15 +152,15 @@ button:hover{background:#0056b3}
 <label><input type="radio" name="q5" value="C"> C) called / had / gone</label>
 <label><input type="radio" name="q5" value="D"> D) have called / have / gone</label>
 </div>
-
-<div class="question">
+[25.08.2026 21:59] Niyozbek: <div class="question">
 <p>6. I took my family to Paris last year. I _ there as a student, so I _ my way around.</p>
 <label><input type="radio" name="q6" value="A"> A) was / know</label>
 <label><input type="radio" name="q6" value="B"> B) were / knew</label>
 <label><input type="radio" name="q6" value="C"> C) had been / have known</label>
 <label><input type="radio" name="q6" value="D"> D) had been / knew</label>
 </div>
-[25.08.2026 21:30] Niyozbek: <div class="question">
+
+<div class="question">
 <p>7. After I _ to the news, I _ to bed.</p>
 <label><input type="radio" name="q7" value="A"> A) listened / went</label>
 <label><input type="radio" name="q7" value="B"> B) had listened / went</label>
@@ -214,15 +239,15 @@ button:hover{background:#0056b3}
 <label><input type="radio" name="q16" value="C"> C) managed to</label>
 <label><input type="radio" name="q16" value="D"> D) couldn’t</label>
 </div>
-
-<div class="question">
+[25.08.2026 21:59] Niyozbek: <div class="question">
 <p>17. Speak up! I _ hear you!</p>
 <label><input type="radio" name="q17" value="A"> A) can</label>
 <label><input type="radio" name="q17" value="B"> B) could</label>
 <label><input type="radio" name="q17" value="C"> C) can’t</label>
 <label><input type="radio" name="q17" value="D"> D) couldn’t</label>
 </div>
-[25.08.2026 21:30] Niyozbek: <div class="question">
+
+<div class="question">
 <p>18. _ I borrow your dictionary?</p>
 <label><input type="radio" name="q18" value="A"> A) Can’t</label>
 <label><input type="radio" name="q18" value="B"> B) Could</label>
@@ -301,10 +326,9 @@ button:hover{background:#0056b3}
 <label><input type="radio" name="q27" value="C"> C) had been bitten</label>
 <label><input type="radio" name="q27" value="D"> D) had bitten</label>
 </div>
-
-<div class="question">
+[25.08.2026 21:59] Niyozbek: <div class="question">
 <p>28. A cease-fire __ expected to __ later this month.</p>
-[25.08.2026 21:30] Niyozbek: <label><input type="radio" name="q28" value="A"> A) was / be declaring</label>
+<label><input type="radio" name="q28" value="A"> A) was / be declaring</label>
 <label><input type="radio" name="q28" value="B"> B) is / be declared</label>
 <label><input type="radio" name="q28" value="C"> C) is / declare</label>
 <label><input type="radio" name="q28" value="D"> D) has expected / to be declared</label>
@@ -326,9 +350,11 @@ button:hover{background:#0056b3}
 <label><input type="radio" name="q30" value="D"> D) didn’t leave / was</label>
 </div>
 
-<button type="button" onclick="finishTest()">Finish Test</button>
+<button type="button" onclick="finishTest()">FINISH TEST</button>
 
 </form>
+
+</div>
 
 <div id="result"></div>
 
@@ -340,82 +366,89 @@ const answers = [
 "A","B","B","B","C",
 "D","A","C","C","D",
 "C","D","B","B","B",
-"D","C","B","A","C",
+"D","C","B","C","A",
 "B","C","C","B","D",
 "D","C","B","C","A"
 ];
 
 let timeLeft = 30 * 60;
+let timer = null;
 let finished = false;
 
-const timer = setInterval(function(){
+function startTest() {
 
-    if(timeLeft <= 0){
-        clearInterval(timer);
-        finishTest();
-        return;
-    }
+    document.getElementById("startScreen").style.display = "none";
+    document.getElementById("testArea").style.display = "block";
 
-    timeLeft--;
+    timer = setInterval(function() {
 
-    let minutes = Math.floor(timeLeft / 60);
-    let seconds = timeLeft % 60;
+        if (timeLeft <= 0) {
+            clearInterval(timer);
+            finishTest();
+            return;
+        }
 
-    document.getElementById("time").textContent =
-        String(minutes).padStart(2,"0") + ":" +
-        String(seconds).padStart(2,"0");
+        timeLeft--;
 
-},1000);
+        let minutes = Math.floor(timeLeft / 60);
+        let seconds = timeLeft % 60;
 
-function finishTest(){
+        document.getElementById("time").textContent =
+            String(minutes).padStart(2, "0") + ":" +
+            String(seconds).padStart(2, "0");
 
-    if(finished) return;
+    }, 1000);
+}
+
+function finishTest() {
+
+    if (finished) return;
 
     finished = true;
-    clearInterval(timer);
+
+    if (timer) {
+        clearInterval(timer);
+    }
 
     let score = 0;
 
-    for(let i=1;i<=30;i++){
+    for (let i = 1; i <= 30; i++) {
 
         let selected =
-            document.querySelector('input[name="q'+i+'"]:checked');
+            document.querySelector(
+                'input[name="q' + i + '"]:checked'
+            );
 
-        if(selected && selected.value === answers[i-1]){
+        if (selected && selected.value === answers[i - 1]) {
             score++;
         }
-    }
-
-    let name =
-        document.getElementById("name").value.trim();
-
-    if(name === ""){
-        name = "Student";
     }
 
     let percent = (score / 30) * 100;
 
     let message = "";
 
-    if(score >= 27){
+    if (score >= 27) {
         message = "Excellent! 🎉";
-    }else if(score >= 24){
+    } else if (score >= 24) {
         message = "Very Good! 👏";
-    }else if(score >= 18){
+    } else if (score >= 18) {
         message = "Good! 👍";
-    }else{
+    } else {
         message = "Keep practicing! 📚";
     }
 
     document.getElementById("result").innerHTML =
-        "<h2>"+name+"</h2>" +
-        "<p>Result: "+score+" / 30</p>" +
-        "<p>Percentage: "+percent.toFixed(1)+"%</p>" +
-        "<p>"+message+"</p>";
+        "<h2>Test Result</h2>" +
+        "<p>Score: " + score + " / 30</p>" +
+        "<p>Percentage: " + percent.toFixed(1) + "%</p>" +
+        "<p>" + message + "</p>";
+
+    document.getElementById("quiz").style.display = "none";
 
     window.scrollTo({
-        top:document.body.scrollHeight,
-        behavior:"smooth"
+        top: document.body.scrollHeight,
+        behavior: "smooth"
     });
 }
 
