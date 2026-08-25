@@ -1,95 +1,74 @@
-<!DOCTYPE html>
-[25.08.2026 20:30] Niyozbek: <!DOCTYPE html>
+[25.08.2026 21:30] Niyozbek: <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>English Grammar Test - 30 Questions</title>
+<title>English Grammar Test</title>
 
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        background: #f2f4f7;
-        margin: 0;
-        padding: 20px;
-    }
-
-    .container {
-        max-width: 800px;
-        margin: auto;
-        background: white;
-        padding: 30px;
-        border-radius: 12px;
-        box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    }
-
-    h1 {
-        text-align: center;
-        color: #333;
-    }
-
-    .info {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    input {
-        padding: 10px;
-        width: 80%;
-        max-width: 400px;
-        border: 1px solid #ccc;
-        border-radius: 6px;
-        font-size: 16px;
-    }
-
-    .question {
-        margin-top: 25px;
-        padding: 15px;
-        background: #f9f9f9;
-        border-radius: 8px;
-    }
-
-    .question p {
-        font-weight: bold;
-    }
-
-    label {
-        display: block;
-        padding: 7px;
-        cursor: pointer;
-    }
-
-    button {
-        display: block;
-        margin: 30px auto 10px;
-        padding: 12px 30px;
-        font-size: 17px;
-        background: #007bff;
-        color: white;
-        border: none;
-        border-radius: 7px;
-        cursor: pointer;
-    }
-
-    button:hover {
-        background: #0056b3;
-    }
-
-    #result {
-        text-align: center;
-        font-size: 20px;
-        font-weight: bold;
-        margin-top: 20px;
-    }
-
-    .correct {
-        color: green;
-    }
-
-    .wrong {
-        color: red;
-    }
+body{
+    font-family:Arial,sans-serif;
+    background:#f2f4f7;
+    margin:0;
+    padding:20px;
+}
+.container{
+    max-width:850px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,.12);
+}
+h1{text-align:center;color:#222}
+.info{text-align:center;margin-bottom:25px}
+#name{
+    padding:12px;
+    width:90%;
+    max-width:400px;
+    border:1px solid #ccc;
+    border-radius:7px;
+    font-size:16px;
+}
+.timer{
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+    margin:15px;
+}
+.question{
+    background:#f8f9fa;
+    padding:15px;
+    margin:15px 0;
+    border-radius:10px;
+}
+.question p{
+    font-weight:bold;
+    line-height:1.5;
+}
+label{
+    display:block;
+    padding:8px;
+    cursor:pointer;
+}
+button{
+    display:block;
+    margin:25px auto;
+    padding:13px 35px;
+    background:#007bff;
+    color:white;
+    border:0;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+}
+button:hover{background:#0056b3}
+#result{
+    text-align:center;
+    font-size:21px;
+    font-weight:bold;
+    margin-top:20px;
+}
 </style>
 </head>
 
@@ -100,222 +79,254 @@
 <h1>English Grammar Test</h1>
 
 <div class="info">
-    <p>Enter your name:</p>
-    <input type="text" id="name" placeholder="Your name">
-    <p>30 Questions | Choose the correct answer</p>
+    <input type="text" id="name" placeholder="Enter your name">
 </div>
 
-<form id="quizForm">
-
-<div class="question">
-<p>1. She ___ to school every day.</p>
-<label><input type="radio" name="q1" value="a"> go</label>
-<label><input type="radio" name="q1" value="b"> goes</label>
-<label><input type="radio" name="q1" value="c"> going</label>
+<div class="timer">
+    Time: <span id="time">30:00</span>
 </div>
 
+<form id="quiz">
+
 <div class="question">
-<p>2. They ___ football now.</p>
-<label><input type="radio" name="q2" value="a"> play</label>
-<label><input type="radio" name="q2" value="b"> played</label>
-<label><input type="radio" name="q2" value="c"> are playing</label>
+<p>1. Lisa _ me a lift because I _ the bus.</p>
+<label><input type="radio" name="q1" value="A"> A) gave / missed</label>
+<label><input type="radio" name="q1" value="B"> B) have given / have missed</label>
+<label><input type="radio" name="q1" value="C"> C) gave / had missed</label>
+<label><input type="radio" name="q1" value="D"> D) had gave / missed</label>
 </div>
 
 <div class="question">
-<p>3. I ___ my homework yesterday.</p>
-<label><input type="radio" name="q3" value="a"> do</label>
-<label><input type="radio" name="q3" value="b"> did</label>
-<label><input type="radio" name="q3" value="c"> done</label>
+<p>2. I _ her for everything she _.</p>
+<label><input type="radio" name="q2" value="A"> A) thanking / did</label>
+<label><input type="radio" name="q2" value="B"> B) thanked / had done</label>
+<label><input type="radio" name="q2" value="C"> C) have thanked / has done</label>
+<label><input type="radio" name="q2" value="D"> D) had thanked / had done</label>
 </div>
 
 <div class="question">
-<p>4. He ___ English very well.</p>
-<label><input type="radio" name="q4" value="a"> speaks</label>
-<label><input type="radio" name="q4" value="b"> speak</label>
-<label><input type="radio" name="q4" value="c"> speaking</label>
+<p>3. When I got to the office, I _ that I _ to lock the front door.</p>
+<label><input type="radio" name="q3" value="A"> A) had realized / forget</label>
+<label><input type="radio" name="q3" value="B"> B) realized / had forgotten</label>
+<label><input type="radio" name="q3" value="C"> C) realized / forget</label>
+<label><input type="radio" name="q3" value="D"> D) had realized / had forgotten</label>
 </div>
 
 <div class="question">
-<p>5. We ___ to the park tomorrow.</p>
-<label><input type="radio" name="q5" value="a"> went</label>
-<label><input type="radio" name="q5" value="b"> will go</label>
-<label><input type="radio" name="q5" value="c"> goes</label>
+<p>4. After they _ their work, they ___ home.</p>
+<label><input type="radio" name="q4" value="A"> A) had finished / went</label>
+<label><input type="radio" name="q4" value="B"> B) finished / went</label>
+<label><input type="radio" name="q4" value="C"> C) had finished / had gone</label>
+<label><input type="radio" name="q4" value="D"> D) finished / had gone</label>
 </div>
 
 <div class="question">
-<p>6. ___ you like coffee?</p>
-<label><input type="radio" name="q6" value="a"> Do</label>
-<label><input type="radio" name="q6" value="b"> Does</label>
-<label><input type="radio" name="q6" value="c"> Did</label>
+<p>5. I _ you at 8.00, but you _ just _ out.</p>
+<label><input type="radio" name="q5" value="A"> A) call / have / gone</label>
+<label><input type="radio" name="q5" value="B"> B) called / have / gone</label>
+<label><input type="radio" name="q5" value="C"> C) called / had / gone</label>
+<label><input type="radio" name="q5" value="D"> D) have called / have / gone</label>
 </div>
 
 <div class="question">
-<p>7. My brother ___ a new car.</p>
-<label><input type="radio" name="q7" value="a"> have</label>
-<label><input type="radio" name="q7" value="b"> has</label>
-<label><input type="radio" name="q7" value="c"> having</label>
+<p>6. I took my family to Paris last year. I _ there as a student, so I _ my way around.</p>
+<label><input type="radio" name="q6" value="A"> A) was / know</label>
+<label><input type="radio" name="q6" value="B"> B) were / knew</label>
+<label><input type="radio" name="q6" value="C"> C) had been / have known</label>
+<label><input type="radio" name="q6" value="D"> D) had been / knew</label>
+</div>
+[25.08.2026 21:30] Niyozbek: <div class="question">
+<p>7. After I _ to the news, I _ to bed.</p>
+<label><input type="radio" name="q7" value="A"> A) listened / went</label>
+<label><input type="radio" name="q7" value="B"> B) had listened / went</label>
+<label><input type="radio" name="q7" value="C"> C) have listened / had gone</label>
+<label><input type="radio" name="q7" value="D"> D) listen / go</label>
 </div>
 
 <div class="question">
-<p>8. There ___ a book on the table.</p>
-<label><input type="radio" name="q8" value="a"> are</label>
-<label><input type="radio" name="q8" value="b"> is</label>
-<label><input type="radio" name="q8" value="c"> am</label>
-</div>
-[25.08.2026 20:30] Niyozbek: <div class="question">
-<p>9. They ___ dinner at 7 PM yesterday.</p>
-<label><input type="radio" name="q9" value="a"> had</label>
-<label><input type="radio" name="q9" value="b"> have</label>
-<label><input type="radio" name="q9" value="c"> has</label>
+<p>8. He _ he was at school the day before.</p>
+<label><input type="radio" name="q8" value="A"> A) says</label>
+<label><input type="radio" name="q8" value="B"> B) told</label>
+<label><input type="radio" name="q8" value="C"> C) said</label>
+<label><input type="radio" name="q8" value="D"> D) is telling</label>
 </div>
 
 <div class="question">
-<p>10. I ___ never been to London.</p>
-<label><input type="radio" name="q10" value="a"> have</label>
-<label><input type="radio" name="q10" value="b"> has</label>
-<label><input type="radio" name="q10" value="c"> had</label>
+<p>9. Sandra _ Bob that she didn’t see the Taj Mahal.</p>
+<label><input type="radio" name="q9" value="A"> A) told</label>
+<label><input type="radio" name="q9" value="B"> B) tells</label>
+<label><input type="radio" name="q9" value="C"> C) said</label>
+<label><input type="radio" name="q9" value="D"> D) talked</label>
 </div>
 
 <div class="question">
-<p>11. She is ___ than her sister.</p>
-<label><input type="radio" name="q11" value="a"> tall</label>
-<label><input type="radio" name="q11" value="b"> taller</label>
-<label><input type="radio" name="q11" value="c"> tallest</label>
+<p>10. Why did you _ that?</p>
+<label><input type="radio" name="q10" value="A"> A) talk</label>
+<label><input type="radio" name="q10" value="B"> B) said</label>
+<label><input type="radio" name="q10" value="C"> C) tell</label>
+<label><input type="radio" name="q10" value="D"> D) say</label>
 </div>
 
 <div class="question">
-<p>12. This is the ___ book I have ever read.</p>
-<label><input type="radio" name="q12" value="a"> interesting</label>
-<label><input type="radio" name="q12" value="b"> more interesting</label>
-<label><input type="radio" name="q12" value="c"> most interesting</label>
+<p>11. Could I __ your pen?</p>
+<label><input type="radio" name="q11" value="A"> A) give</label>
+<label><input type="radio" name="q11" value="B"> B) lend</label>
+<label><input type="radio" name="q11" value="C"> C) borrow</label>
+<label><input type="radio" name="q11" value="D"> D) make</label>
 </div>
 
 <div class="question">
-<p>13. He ___ get up early every day.</p>
-<label><input type="radio" name="q13" value="a"> have to</label>
-<label><input type="radio" name="q13" value="b"> has to</label>
-<label><input type="radio" name="q13" value="c"> having to</label>
+<p>12. I’m English. I come from Brighton. In Paris I am a _.</p>
+<label><input type="radio" name="q12" value="A"> A) cooker</label>
+<label><input type="radio" name="q12" value="B"> B) stranger</label>
+<label><input type="radio" name="q12" value="C"> C) travel</label>
+<label><input type="radio" name="q12" value="D"> D) foreigner</label>
 </div>
 
 <div class="question">
-<p>14. I am interested ___ music.</p>
-<label><input type="radio" name="q14" value="a"> in</label>
-<label><input type="radio" name="q14" value="b"> on</label>
-<label><input type="radio" name="q14" value="c"> at</label>
+<p>13. The police _ find the man who had stolen my car. He was sent to prison.</p>
+<label><input type="radio" name="q13" value="A"> A) can</label>
+<label><input type="radio" name="q13" value="B"> B) could</label>
+<label><input type="radio" name="q13" value="C"> C) managed to</label>
+<label><input type="radio" name="q13" value="D"> D) couldn’t</label>
 </div>
 
 <div class="question">
-<p>15. She ___ TV every evening.</p>
-<label><input type="radio" name="q15" value="a"> watch</label>
-<label><input type="radio" name="q15" value="b"> watches</label>
-<label><input type="radio" name="q15" value="c"> watched</label>
+<p>14. My grandfather _ speak four languages when he was alive.</p>
+<label><input type="radio" name="q14" value="A"> A) can</label>
+<label><input type="radio" name="q14" value="B"> B) could</label>
+<label><input type="radio" name="q14" value="C"> C) managed to</label>
+<label><input type="radio" name="q14" value="D"> D) couldn’t</label>
 </div>
 
 <div class="question">
-<p>16. We ___ dinner when he arrived.</p>
-<label><input type="radio" name="q16" value="a"> were having</label>
-<label><input type="radio" name="q16" value="b"> have</label>
-<label><input type="radio" name="q16" value="c"> had</label>
+<p>15. When we got to the top of the mountain we _ see for miles.</p>
+<label><input type="radio" name="q15" value="A"> A) can</label>
+<label><input type="radio" name="q15" value="B"> B) could</label>
+<label><input type="radio" name="q15" value="C"> C) managed</label>
+<label><input type="radio" name="q15" value="D"> D) couldn’t</label>
 </div>
 
 <div class="question">
-<p>17. They ___ already finished the work.</p>
-<label><input type="radio" name="q17" value="a"> have</label>
-<label><input type="radio" name="q17" value="b"> has</label>
-<label><input type="radio" name="q17" value="c"> are</label>
+<p>16. In my country you _ get married when you’re sixteen.</p>
+<label><input type="radio" name="q16" value="A"> A) can</label>
+<label><input type="radio" name="q16" value="B"> B) could</label>
+<label><input type="radio" name="q16" value="C"> C) managed to</label>
+<label><input type="radio" name="q16" value="D"> D) couldn’t</label>
 </div>
 
 <div class="question">
-<p>18. I ___ a student.</p>
-<label><input type="radio" name="q18" value="a"> is</label>
-<label><input type="radio" name="q18" value="b"> am</label>
-<label><input type="radio" name="q18" value="c"> are</label>
+<p>17. Speak up! I _ hear you!</p>
+<label><input type="radio" name="q17" value="A"> A) can</label>
+<label><input type="radio" name="q17" value="B"> B) could</label>
+<label><input type="radio" name="q17" value="C"> C) can’t</label>
+<label><input type="radio" name="q17" value="D"> D) couldn’t</label>
+</div>
+[25.08.2026 21:30] Niyozbek: <div class="question">
+<p>18. _ I borrow your dictionary?</p>
+<label><input type="radio" name="q18" value="A"> A) Can’t</label>
+<label><input type="radio" name="q18" value="B"> B) Could</label>
+<label><input type="radio" name="q18" value="C"> C) Manage to</label>
+<label><input type="radio" name="q18" value="D"> D) Couldn’t</label>
 </div>
 
 <div class="question">
-<p>19. ___ there any milk in the fridge?</p>
-<label><input type="radio" name="q19" value="a"> Are</label>
-<label><input type="radio" name="q19" value="b"> Is</label>
-<label><input type="radio" name="q19" value="c"> Am</label>
+<p>19. Where have you ____? You’re so brown!</p>
+<label><input type="radio" name="q19" value="A"> A) been</label>
+<label><input type="radio" name="q19" value="B"> B) in gone</label>
+<label><input type="radio" name="q19" value="C"> C) done</label>
+<label><input type="radio" name="q19" value="D"> D) being</label>
 </div>
 
 <div class="question">
-<p>20. He ___ his friend last weekend.</p>
-<label><input type="radio" name="q20" value="a"> visit</label>
-<label><input type="radio" name="q20" value="b"> visits</label>
-<label><input type="radio" name="q20" value="c"> visited</label>
+<p>20. ‘Are you going to the shops this afternoon?’<br>‘No, I’ve already ____ . I went this morning.’</p>
+<label><input type="radio" name="q20" value="A"> A) going</label>
+<label><input type="radio" name="q20" value="B"> B) gone</label>
+<label><input type="radio" name="q20" value="C"> C) been</label>
+<label><input type="radio" name="q20" value="D"> D) being</label>
 </div>
 
 <div class="question">
-<p>21. I usually ___ breakfast at 8 AM.</p>
-<label><input type="radio" name="q21" value="a"> have</label>
-<label><input type="radio" name="q21" value="b"> has</label>
-<label><input type="radio" name="q21" value="c"> had</label>
+<p>21. ‘Can I speak to Jenny, please?’<br>‘I’m afraid she’s _ to lunch. Can I take a message?’</p>
+<label><input type="radio" name="q21" value="A"> A) going</label>
+<label><input type="radio" name="q21" value="B"> B) gone</label>
+<label><input type="radio" name="q21" value="C"> C) been</label>
+<label><input type="radio" name="q21" value="D"> D) being</label>
 </div>
 
 <div class="question">
-<p>22. She can ___ very fast.</p>
-<label><input type="radio" name="q22" value="a"> runs</label>
-<label><input type="radio" name="q22" value="b"> run</label>
-<label><input type="radio" name="q22" value="c"> running</label>
+<p>22. I’ve never _ to Australia, but I’d like to go.</p>
+<label><input type="radio" name="q22" value="A"> A) went</label>
+<label><input type="radio" name="q22" value="B"> B) gone</label>
+<label><input type="radio" name="q22" value="C"> C) been</label>
+<label><input type="radio" name="q22" value="D"> D) being</label>
 </div>
 
 <div class="question">
-<p>23. We ___ going to travel next month.</p>
-<label><input type="radio" name="q23" value="a"> is</label>
-<label><input type="radio" name="q23" value="b"> are</label>
-<label><input type="radio" name="q23" value="c"> am</label>
-</div>
-[25.08.2026 20:30] Niyozbek: <div class="question">
-<p>24. My parents ___ at home now.</p>
-<label><input type="radio" name="q24" value="a"> is</label>
-<label><input type="radio" name="q24" value="b"> are</label>
-<label><input type="radio" name="q24" value="c"> am</label>
+<p>23. ‘When’s your holiday?’<br>‘We’ve already _ . We went to France.’</p>
+<label><input type="radio" name="q23" value="A"> A) gone</label>
+<label><input type="radio" name="q23" value="B"> B) were</label>
+<label><input type="radio" name="q23" value="C"> C) been</label>
+<label><input type="radio" name="q23" value="D"> D) being</label>
 </div>
 
 <div class="question">
-<p>25. This bag is ___ than that one.</p>
-<label><input type="radio" name="q25" value="a"> expensive</label>
-<label><input type="radio" name="q25" value="b"> more expensive</label>
-<label><input type="radio" name="q25" value="c"> most expensive</label>
+<p>24. ‘Where’s Harry these days?’<br>‘Didn’t you know? He’s _ to another company.’</p>
+<label><input type="radio" name="q24" value="A"> A) went</label>
+<label><input type="radio" name="q24" value="B"> B) gone</label>
+<label><input type="radio" name="q24" value="C"> C) been</label>
+<label><input type="radio" name="q24" value="D"> D) being</label>
 </div>
 
 <div class="question">
-<p>26. He ___ English for five years.</p>
-<label><input type="radio" name="q26" value="a"> studies</label>
-<label><input type="radio" name="q26" value="b"> has studied</label>
-<label><input type="radio" name="q26" value="c"> study</label>
+<p>25. The Prime Minister of Italy ____.</p>
+<label><input type="radio" name="q25" value="A"> A) has been resigned</label>
+<label><input type="radio" name="q25" value="B"> B) have resigned</label>
+<label><input type="radio" name="q25" value="C"> C) resigned</label>
+<label><input type="radio" name="q25" value="D"> D) has resigned</label>
 </div>
 
 <div class="question">
-<p>27. If it rains, we ___ at home.</p>
-<label><input type="radio" name="q27" value="a"> stay</label>
-<label><input type="radio" name="q27" value="b"> stayed</label>
-<label><input type="radio" name="q27" value="c"> will stay</label>
+<p>26. It _ that the Government would do something to relieve the situation.</p>
+<label><input type="radio" name="q26" value="A"> A) is assumed</label>
+<label><input type="radio" name="q26" value="B"> B) assumed</label>
+<label><input type="radio" name="q26" value="C"> C) was assuming</label>
+<label><input type="radio" name="q26" value="D"> D) was assumed</label>
 </div>
 
 <div class="question">
-<p>28. I ___ him tomorrow.</p>
-<label><input type="radio" name="q28" value="a"> call</label>
-<label><input type="radio" name="q28" value="b"> called</label>
-<label><input type="radio" name="q28" value="c"> will call</label>
+<p>27. The man who __ by a snake was given a serum.</p>
+<label><input type="radio" name="q27" value="A"> A) is bitten</label>
+<label><input type="radio" name="q27" value="B"> B) has been bitten</label>
+<label><input type="radio" name="q27" value="C"> C) had been bitten</label>
+<label><input type="radio" name="q27" value="D"> D) had bitten</label>
 </div>
 
 <div class="question">
-<p>29. They ___ to the cinema last night.</p>
-<label><input type="radio" name="q29" value="a"> go</label>
-<label><input type="radio" name="q29" value="b"> went</label>
-<label><input type="radio" name="q29" value="c"> gone</label>
+<p>28. A cease-fire __ expected to __ later this month.</p>
+[25.08.2026 21:30] Niyozbek: <label><input type="radio" name="q28" value="A"> A) was / be declaring</label>
+<label><input type="radio" name="q28" value="B"> B) is / be declared</label>
+<label><input type="radio" name="q28" value="C"> C) is / declare</label>
+<label><input type="radio" name="q28" value="D"> D) has expected / to be declared</label>
 </div>
 
 <div class="question">
-<p>30. You ___ wear a seatbelt in a car.</p>
-<label><input type="radio" name="q30" value="a"> should</label>
-<label><input type="radio" name="q30" value="b"> should to</label>
-<label><input type="radio" name="q30" value="c"> shoulds</label>
+<p>29. A great deal of research __ into the possible causes of cancer.</p>
+<label><input type="radio" name="q29" value="A"> A) are being done</label>
+<label><input type="radio" name="q29" value="B"> B) have been done</label>
+<label><input type="radio" name="q29" value="C"> C) has been done</label>
+<label><input type="radio" name="q29" value="D"> D) has done</label>
 </div>
 
-<button type="button" onclick="checkAnswers()">Finish Test</button>
+<div class="question">
+<p>30. She promised that she __ hospital until she __ better.</p>
+<label><input type="radio" name="q30" value="A"> A) would not leave / was</label>
+<label><input type="radio" name="q30" value="B"> B) wouldn’t leave / would be</label>
+<label><input type="radio" name="q30" value="C"> C) doesn’t leave / was</label>
+<label><input type="radio" name="q30" value="D"> D) didn’t leave / was</label>
+</div>
+
+<button type="button" onclick="finishTest()">Finish Test</button>
 
 </form>
 
@@ -324,43 +335,90 @@
 </div>
 
 <script>
-function checkAnswers() {
 
-    let correctAnswers = [
-        "b", "c", "b", "a", "b",
-        "a", "b", "b", "a", "a",
-        "b", "c", "b", "a", "b",
-        "a", "a", "b", "b", "c",
-        "a", "b", "b", "b", "b",
-        "b", "c", "c", "b", "a"
-    ];
+const answers = [
+"A","B","B","B","C",
+"D","A","C","C","D",
+"C","D","B","B","B",
+"D","C","B","A","C",
+"B","C","C","B","D",
+"D","C","B","C","A"
+];
+
+let timeLeft = 30 * 60;
+let finished = false;
+
+const timer = setInterval(function(){
+
+    if(timeLeft <= 0){
+        clearInterval(timer);
+        finishTest();
+        return;
+    }
+
+    timeLeft--;
+
+    let minutes = Math.floor(timeLeft / 60);
+    let seconds = timeLeft % 60;
+
+    document.getElementById("time").textContent =
+        String(minutes).padStart(2,"0") + ":" +
+        String(seconds).padStart(2,"0");
+
+},1000);
+
+function finishTest(){
+
+    if(finished) return;
+
+    finished = true;
+    clearInterval(timer);
 
     let score = 0;
-    let unanswered = 0;
 
-    for (let i = 1; i <= 30; i++) {
-        let answer = document.querySelector('input[name="q' + i + '"]:checked');
+    for(let i=1;i<=30;i++){
 
-        if (!answer) {
-            unanswered++;
-        } else if (answer.value === correctAnswers[i - 1]) {
+        let selected =
+            document.querySelector('input[name="q'+i+'"]:checked');
+
+        if(selected && selected.value === answers[i-1]){
             score++;
         }
     }
 
-    let name = document.getElementById("name").value;
+    let name =
+        document.getElementById("name").value.trim();
 
-    if (name === "") {
+    if(name === ""){
         name = "Student";
     }
 
-    let percentage = (score / 30) * 100;
+    let percent = (score / 30) * 100;
+
+    let message = "";
+
+    if(score >= 27){
+        message = "Excellent! 🎉";
+    }else if(score >= 24){
+        message = "Very Good! 👏";
+    }else if(score >= 18){
+        message = "Good! 👍";
+    }else{
+        message = "Keep practicing! 📚";
+    }
 
     document.getElementById("result").innerHTML =
-        name + ", your result: " + score + "/30<br>" +
-        "Percentage: " + percentage.toFixed(1) + "%<br>" +
-        "Unanswered: " + unanswered;
+        "<h2>"+name+"</h2>" +
+        "<p>Result: "+score+" / 30</p>" +
+        "<p>Percentage: "+percent.toFixed(1)+"%</p>" +
+        "<p>"+message+"</p>";
+
+    window.scrollTo({
+        top:document.body.scrollHeight,
+        behavior:"smooth"
+    });
 }
+
 </script>
 
 </body>
